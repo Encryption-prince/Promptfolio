@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="icon" href="Windows_Terminal_Logo.png" type="image/png">
-    <title>Promptfoli</title>
+    <title>Promptfolio</title>
 </head>
 
 <body onload="loadfun()">
-    <div id="loading"> <img src="https://i.imgur.com/FEDTpyE.gif" alt="Loading"></div>
+    <div id="loading"> <img src="Animation - 1729185070101.gif" alt="Loading"></div>
     <div class="button-container">
         <button class="app" id="app" onclick="AppOpen()">
             <img src="Windows_Terminal_Logo.png" alt="Terminal" id="AppIcon">
@@ -59,12 +59,25 @@
     </div>
    
     <script>on_load()</script>
-    <script>
+    <!-- <script>
         var load = document.getElementById("loading");
         function loadfun() {
             load.style.display = 'none';
         }
+    </script> -->
+
+    <script>
+        var load = document.getElementById("loading");
+    
+        function loadfun() {
+            setTimeout(function() {
+                load.style.display = 'none'; // Hide the loader after 5 seconds
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
+    
+        window.onload = loadfun; // Call the loadfun when the window finishes loading
     </script>
+    
 
 </body>
 
