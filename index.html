@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="Windows_Terminal_Logo.png" type="image/png">
+    <title>Promptfolio</title>
+</head>
+
+<body onload="loadfun()">
+    <div id="loading"> <img src="https://i.imgur.com/FEDTpyE.gif" alt="Loading"></div>
+    <div class="button-container">
+        <button class="app" id="app" onclick="AppOpen()">
+            <img src="Windows_Terminal_Logo.png" alt="Terminal" id="AppIcon">
+            <span class="term">Terminal</span>
+        </button>
+        <button class="app2" id="app2" onclick="AppOpenResumeTab()">
+            <img src="resume-icon-circular.jpg" alt="MyResume" id="AppIcon2">
+            <span class="resu">My Resume</span>
+        </button>
+        <button class="app3" id="app3" onclick="OpenStandardPortfolio()">
+            <img src="profile-img-circular.png" alt="StandardPortfolio" id="AppIcon">
+            <span class="port">Portfolio<br>Website</span>
+        </button>
+    </div>
+
+
+    <div id="Terminal" class="Terminal">
+        <br>
+        Radhe Radhe 🙏<br>Welcome to my terminal, I am <span class="name">Subham Maity</span><br><br>
+        I am a <span class="game">Backend Developer</span> and an <span class="backend">ML Enthusiast</span>(⌐■_■)<br>
+        Also a <a class="mlh" href="">Competitive Coder</a> and a <a class="ddc" href="">Graphics Designer</a> as well.
+        <p id="Content" class="Content">
+            <br>Type help to view list of available commands.<br>
+        </p><br><span class='dollar'>$ </span>
+        <form><input class="command" /></form><br>
+
+        <div class="Buttons" id="Buttons">
+            <button class="x titlebutton" onclick=closeT()></button>
+            <button class="Under titlebutton" onclick="Hide()"></button>
+            <button class="Maximize titlebutton" onclick="Maxim()"></button>
+            <span class="titlebar">Portfolio</span>
+        </div>
+    </div>
+
+
+
+    <div id="ResumeTab" class="ResumeTab">
+        <div class="image-container">
+            <img src="resume as on 23.08.24_pages-to-jpg-0001.jpg" alt="Image" class="resumePage"/>
+        </div>
+        <div class="Buttons ButtonsResumeTab" id="Buttons">
+            <button class="x titlebutton" onclick=closeResumeTab()></button>
+            <button class="Under titlebutton UnderR" onclick="HideResumeTab()"></button>
+            <span class="titlebarResumeTab">Resume as on 23.08.2024</span>
+        </div>
+    </div>
+   
+    <script>on_load()</script>
+    <script>
+        var load = document.getElementById("loading");
+        function loadfun() {
+            load.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
